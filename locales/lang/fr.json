@@ -1,0 +1,115 @@
+{
+  "general-errors": {
+    "networkError": "Une erreur est survenue. Veuillez vérifier votre connexion internet."
+  },
+  "loading": "Chargement",  
+  "home": {
+    "navbar": {
+      "link1": "Accueil",
+      "link2": "Nos Formations",
+      "link3": "Notre Equipe",
+      "link4": "Contactez-nous",
+     "language": "Langue",
+      "loginBtn": "Se connecter",
+      "dashboardBtn": "Tableau de bord"
+    }
+  },
+
+ 
+ 
+  
+  "hero": {
+    "title": "LAVAGE PRENUIM !",
+    "subtitle": "Votre voiture",
+    "subtitle2": "merite",
+    "subtitle3": "le meilleur",
+    "description": "Service de lavage automobile professionnel. Qualité prenuim,",
+    "description2": "résultats exceptionnels, satisfaction garantie",
+    "signup": "Reservez maintenant",
+     "service": "Decouvrir nos services"
+  },
+  "cta": {
+    "title": "Les avantages",
+    "title2": "des formations de",
+    "brandName": "SP ACADEMY",
+    "advantages": [
+      "Les bases de l'investissement immobilier à l'international",
+      "L'analyse de projets : lecture, rentabilité, comparaison",
+      "Le rôle du conseiller immobilier : communication, éthique, accompagnement client",
+      "Les démarches d'achat à l'étranger (juridiques, financières, logistiques)",
+      "La recherche d'opportunités dans plusieurs marchés étrangers",
+      "La mise en place de votre activité (en tant qu'agent ou consultant indépendant)"
+    ],
+    "button": "En savoir +"
+  },
+  "cta2": {
+    "title": "Pour qui est faite",
+    "title2": "les formations de",
+    "brandName": "SP ACADEMY",
+    "targetAudience": [
+      "Les débutants curieux de découvrir l'immobilier international",
+      "Les jeunes souhaitant se lancer dans un domaine d'avenir",
+      "Les agents ou investisseurs locaux qui veulent élargir leur champ d'action",
+      "Toute personne cherchant à développer des revenus ou une carrière à l'échelle mondiale"
+    ],
+    "button": "Commencer votre cours"
+  },
+
+
+"advantages": {
+    "title": "Ce que ",
+    "title2": "SP ACADEMY ",
+    "title3": "vous apporte",
+    "description1": "+25",
+    "description2": "Formations en immobilier",
+    "description3": "+90",
+    "description4": "Personnes formées",
+    "description5": "+55",
+    "description6": "Certificats délivrés"
+},
+  
+ "section8": {
+    "mission1": "Metre en place des",
+    "mission2": "strategies concrètes",
+    "mission3": "differents contextes",
+    "mission4": "immobiliers",
+    "mission5": "Mettre en place des",
+    "mission6": "stratégies concrètes",
+    "mission7": "pour réussir dans",
+    "mission8": "différents contextes immobiliers",
+    "mission9": "Mettre en place",
+    "mission10": "un accompagnement professionnel",
+    "mission11": "pour bâtir votre carrière",
+    "mission12": "dans le domaine",
+    "mission13": "Vous offrir des",
+    "mission14": "opportunités concrètes",
+    "mission15": "concrètes d'agir sur des projets",
+    "mission16": "Vous offrir des opportunités",
+    "mission17": "concrètes d'agir",
+    "mission18": "sur des projets réels,",
+    "mission19": "dès la fin de la formation"
+  },
+
+  
+    "NosForm": {
+      "forma1": "Nos différentes Formations",
+      "forma2": "Suivre",
+      "forma3": "Voir plus"
+  
+  },
+
+  "Footer": {
+    "foot1": "Compagnie",
+    "foot2": "Équipes",
+    "foot3": "À propos",
+    "foot4": "Projets",
+    "foot5": "Services",
+    "foot6": "À propos de nous",
+    "foot7": "Témoignages",
+    "foot8": "Contact",
+    "foot9": "Téléphone",
+    "foot10": "Email"
+  }
+  
+  
+}  

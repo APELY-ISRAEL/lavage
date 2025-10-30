@@ -1,0 +1,113 @@
+  {
+  "general-errors": {
+    "networkError": "An error occurred. Please check your internet connection."
+  },
+  "loading": "Loading",
+  "home": {
+    "navbar": {
+      "link1": "Home",
+      "link2": "Our Courses",
+      "link3": "Our Team",
+      "link4": "Contact Us",
+      "language": "Language",
+      "loginBtn": "Login",
+      "dashboardBtn": "Dashboard"
+    }
+  },
+ 
+ 
+ "hero": {
+  "title": "PREMIUM WASH!",
+  "subtitle": "Your car",
+  "subtitle2": "deserves",
+  "subtitle3": "the best",
+  "description": "Professional car wash service. Premium quality,",
+  "description2": "exceptional results, guaranteed satisfaction",
+  "signup": "Book now",
+  "service": "Discover our services"
+},
+
+  "cta": {
+    "title": "The advantages",
+    "title2": "of",
+    "brandName": "SP ACADEMY",
+    "advantages": [
+      "The basics of international real estate investment",
+      "Project analysis: reading, profitability, comparison",
+      "The role of the real estate consultant: communication, ethics, client support",
+      "Purchasing procedures abroad (legal, financial, logistical)",
+      "Searching for opportunities in several foreign markets",
+      "Setting up your business (as an agent or independent consultant)"
+    ],
+    "button": "Learn more"
+  },
+  "cta2": {
+    "title": "Who are",
+    "title2": "the courses from",
+    "brandName": "SP ACADEMY",
+    "titleSuffix": "for?",
+    "targetAudience": [
+      "Beginners curious to discover international real estate",
+      "Young people wanting to launch into a promising field",
+      "Local agents or investors who want to expand their scope of action",
+      "Anyone seeking to develop income or a career on a global scale"
+    ],
+    "button": "Start your course"
+  },
+"advantages": {
+    "title": "What ",
+    "title2": "SP ACADEMY ",
+    "title3": "brings to you.",
+    "description1": "+25",
+    "description2": "real estate courses",
+    "description3": "+90",
+    "description4": "people trained",
+    "description5": "+55",
+    "description6": "certificates issued"
+},
+
+ "section8": {
+    "mission1": "Providing you with solid knowledge",
+    "mission2": "about international",
+    "mission3": "real estate",
+    "mission4": "investment",
+    "mission5": "Implementing concrete",
+    "mission6": "strategies to succeed",
+    "mission7": "in different real",
+    "mission8": "estate contexts",
+    "mission9": "Providing professional",
+    "mission10": "guidance to build",
+    "mission11": "your career",
+    "mission12": "in the field",
+    "mission13": "Offering concrete",
+    "mission14": "opportunities",
+    "mission15": "to work on real projects",
+    "mission16": "Providing concrete opportunities",
+    "mission18": "to act on real projects",
+    "mission19": "starting immediately"
+  },
+
+  "NosForm": {
+    "forma1": "Our Different Courses",
+    "forma2": "Follow",
+    "forma3": "See more"
+  },
+
+  
+    "Footer": {
+      "foot1": "Company",
+      "foot2": "Teams",
+      "foot3": "About",
+      "foot4": "Projects",
+      "foot5": "Services",
+      "foot6": "About us",
+      "foot7": "Testimonial",
+      "foot8": "Contact",
+      "foot9": "Phone",
+      "foot10": "Email"
+    
+  }
+
+  
+  
+  }
