@@ -26,7 +26,7 @@ const NavbarComponent = () => {
   return (
     <header className="fixed top-0 z-50 w-full bg-white/30 backdrop-blur-lg px-4 text-primary-75 ">
       <div className="container mx-auto flex h-[4rem] items-center justify-between ">
-        <div className="flex items-center justify-between gap-[6rem]">
+        <div className="flex flex-col items-center justify-between gap-[6rem]">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
@@ -36,6 +36,10 @@ const NavbarComponent = () => {
               height={siteConfig.logo.height}
               className="h-8 w-auto md:h-8 lg:h-12 lg:w-auto"
             />
+
+            <h1 className="text-3xl font-anektelugu-semibold text-primary-75">
+              AutoLuxe
+            </h1>
           </Link>
           
         </div>

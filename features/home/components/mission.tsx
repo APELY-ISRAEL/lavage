@@ -5,7 +5,7 @@ import { FaRocket, FaUsers, FaLightbulb, FaGlobe } from "react-icons/fa";
 const Missions = () => {
     const { t } = useTranslation();
     return (
-        <section className="md:px-0 px-4">
+        <section className="md:px-0 px-4 mt-10">
             <div> <h2 className="text-[3.5rem] text-center h-[10%] font-anektelugu-semibold text-primary-200 mb-6">
                 Pourquoi nous choisir
             </h2>

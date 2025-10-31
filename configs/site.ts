@@ -13,9 +13,10 @@ export const siteConfig: SiteConfig = {
   },
   navLinks: [
     { label: 'link1', href: '/' },
-    { label: 'link2', href: '/nos-formations' },
+    { label: 'link2', href: '/service' },
       { label: 'link3', href: '/notre-equipe' },
-      { label: 'link4', href: '/contactez-nous' },
+      { label: 'link4', href: '/contact' },
+      { label: 'link5', href: '/reservation' },
   ],
   authLinks: [
     {

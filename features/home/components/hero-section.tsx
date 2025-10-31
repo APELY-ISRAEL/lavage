@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const HeroSection = () => {
     const { t } = useTranslation();
     return (
-        <section className="h-[55rem] md:h-[45vh] lg:h-[90vh] flex rounded-b-[2rem] bg-white w-full overflow-hidden">
+        <section className="h-[55rem] md:h-[45vh] lg:h-[90vh] flex rounded-b-[2rem] bg-muted w-full overflow-hidden">
             <div className="container mx-auto flex items-center justify-between">
                 {/* Contenu texte à gauche */}
                 <div className="md:w-1/2 w-full px-4 md:px-8  flex flex-col gap-2">
@@ -38,7 +38,7 @@ const HeroSection = () => {
                             {t("hero.signup")}
                         </BaseButton>
 
-                          <BaseButton className="border border-white bg-white text-dark px-10 py-6 rounded-md w-[w-2/5] border-black font-kantumruy-medium hover:bg-primary-75 hover:text-white transition-all duration-300 whitespace-nowrap">
+                        <BaseButton className="border border-white bg-white text-dark px-10 py-6 rounded-md w-[w-2/5] border-black font-kantumruy-medium hover:bg-primary-75 hover:text-white transition-all duration-300 whitespace-nowrap">
                             {t("hero.service")}
                         </BaseButton>
 
@@ -46,16 +46,20 @@ const HeroSection = () => {
                 </div>
 
                 {/* Image à droite */}
-                <div className="w-1/2 h-full relative lg:pt-6 pt-8 md:flex hidden items-center justify-center">
+                <div className="relative w-1/2 h-full lg:pt-6 pt-8 md:flex hidden mt-10">
                     <Image
-                        src="/images/home/hero.svg"
-                        alt="Formation en immobilier à l'international"
-                        width={800}
-                        height={700}
-                        className="h-full w-fit lg:object-cover object-contain "
+                        src="/images/cars5.png"
+                        alt="Voiture"
+                        width={400}
+                        height={400}
+                        className="h-auto w-auto object-contain mask-left-gradient"
                         priority
                     />
+
+                    {/* Dégradé blanc à gauche */}
+                    <div className="absolute top-0 left-0 h-full w-1/3  from-white to-transparent"></div>
                 </div>
+
             </div>
         </section>
     );

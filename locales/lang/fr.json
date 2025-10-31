@@ -2,22 +2,19 @@
   "general-errors": {
     "networkError": "Une erreur est survenue. Veuillez vérifier votre connexion internet."
   },
-  "loading": "Chargement",  
+  "loading": "Chargement",
   "home": {
     "navbar": {
       "link1": "Accueil",
-      "link2": "Nos Formations",
+      "link2": "Nos Services",
       "link3": "Notre Equipe",
       "link4": "Contactez-nous",
-     "language": "Langue",
+      "link5": "Reservation",
+      "language": "Langue",
       "loginBtn": "Se connecter",
       "dashboardBtn": "Tableau de bord"
     }
   },
-
- 
- 
-  
   "hero": {
     "title": "LAVAGE PRENUIM !",
     "subtitle": "Votre voiture",
@@ -26,7 +23,7 @@
     "description": "Service de lavage automobile professionnel. Qualité prenuim,",
     "description2": "résultats exceptionnels, satisfaction garantie",
     "signup": "Reservez maintenant",
-     "service": "Decouvrir nos services"
+    "service": "Decouvrir nos services"
   },
   "cta": {
     "title": "Les avantages",
@@ -54,9 +51,7 @@
     ],
     "button": "Commencer votre cours"
   },
-
-
-"advantages": {
+  "advantages": {
     "title": "Ce que ",
     "title2": "SP ACADEMY ",
     "title3": "vous apporte",
@@ -66,9 +61,8 @@
     "description4": "Personnes formées",
     "description5": "+55",
     "description6": "Certificats délivrés"
-},
-  
- "section8": {
+  },
+  "section8": {
     "mission1": "Metre en place des",
     "mission2": "strategies concrètes",
     "mission3": "differents contextes",
@@ -89,27 +83,21 @@
     "mission18": "sur des projets réels,",
     "mission19": "dès la fin de la formation"
   },
-
-  
-    "NosForm": {
-      "forma1": "Nos différentes Formations",
-      "forma2": "Suivre",
-      "forma3": "Voir plus"
-  
+  "NosForm": {
+    "forma1": "Nos différentes Formations",
+    "forma2": "Suivre",
+    "forma3": "Voir plus"
   },
-
   "Footer": {
-    "foot1": "Compagnie",
+    "foot1": "Navigation",
     "foot2": "Équipes",
     "foot3": "À propos",
     "foot4": "Projets",
-    "foot5": "Services",
+    "foot5": "Contact",
     "foot6": "À propos de nous",
     "foot7": "Témoignages",
-    "foot8": "Contact",
+    "foot8": "Newsletter",
     "foot9": "Téléphone",
     "foot10": "Email"
   }
-  
-  
-}  
+}
