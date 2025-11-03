@@ -6,9 +6,7 @@ const Contactez = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-6 lg:px-20">
-        <h2 className="text-3xl font-anektelugu-semibold text-primary-900 mb-12 text-center">
-          Contactez-nous
-        </h2>
+      
 
         {/* Cartes contact */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
@@ -80,16 +78,16 @@ const Contactez = () => {
           </div>
 
           {/* Carte / localisation */}
-          <div className="rounded-lg overflow-hidden shadow-md">
-            {/* Ici tu peux mettre une image statique de la localisation ou intégrer Google Maps */}
-            <Image
-              src="/images/map-placeholder.png" // Remplace par ta carte ou Google Maps embed
-              alt="Localisation"
-              width={600}
-              height={400}
-              className="w-full h-auto object-cover"
-            />
-          </div>
+          <div className="rounded-lg overflow-hidden shadow-md w-full h-full">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63466.018279061405!2d1.100358121679675!3d6.180767899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1021591da1554231%3A0xc486ff9ab403f7d!2sLa%20Poste%20Adidogom%C3%A9!5e0!3m2!1sfr!2stg!4v1762162123349!5m2!1sfr!2stg"
+    style={{ border: 0 }}
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    className="w-full h-full"
+  ></iframe>
+</div>
+
         </div>
       </div>
     </section>

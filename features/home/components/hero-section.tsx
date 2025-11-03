@@ -7,43 +7,60 @@ const HeroSection = () => {
     const { t } = useTranslation();
     return (
         <section className="h-[55rem] md:h-[45vh] lg:h-[90vh] flex rounded-b-[2rem] bg-muted w-full overflow-hidden">
-            <div className="container mx-auto flex items-center justify-between">
-                {/* Contenu texte à gauche */}
-                <div className="md:w-1/2 w-full px-4 md:px-8  flex flex-col gap-2">
+            <div className="container mx-auto flex flex-col md:flex-row md:items-center gap-6 mt-6 md:flex mt-25 sm:flex mt-25 ">
 
-                    <div className="mb-8 bg-primary-150 rounded-lg p-2 font-anektelugu-regular max-w-md w-[15rem] text-center">
-                        <span className="font-anektelugu-medium capitalize text-primary-75 text-[1.4rem] md:text-[1.4rem] lg:text-[1.2rem]">
+                {/* Contenu texte à gauche */}
+                <div className="md:w-1/2 w-full px-4 md:px-8 flex flex-col gap-3">
+
+                    {/* Badge */}
+                    <div className="mb-6 bg-primary-150 rounded-lg p-2 font-anektelugu-regular max-w-[15rem] text-center">
+                        <span className="font-anektelugu-medium capitalize text-primary-75 text-lg md:text-xl lg:text-lg">
                             {t("hero.title")}
                         </span>
                     </div>
 
-
-                    <span className="mb-3 font-anektelugu-medium capitalize text-[1.5rem] md:text-[2rem] lg:text-[3rem] md:leading-8 text-black lg:leading-12">
+                    {/* Titre ligne 1 */}
+                    <span className="font-anektelugu-medium capitalize text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-black">
                         {t("hero.subtitle")} {t("hero.subtitle2")}
-
                     </span>
 
-                    <span className="mb-6 font-anektelugu-medium capitalize text-[1.5rem] md:text-[2rem] lg:text-[3rem] md:leading-8 text-primary-75 lg:leading-12">
+                    {/* Titre ligne 2 */}
+                    <span className="font-anektelugu-medium capitalize text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary-75">
                         {t("hero.subtitle3")}
                     </span>
 
-                    <Image src="/images/home/hero.svg" alt="Formation en immobilier à l'international" width={100} height={100} className="w-fit h-fit md:hidden block " />
+                    {/* Image mobile uniquement */}
+                      <div className="w-1/2 h-full relative lg:pt-6 pt-8 md:flex hidden items-center justify-center">
+                    <Image
+                        src="/images/home/hero.svg"
+                        alt="Formation en immobilier à l'international"
+                        width={100}
+                        height={100}
+                        className="w-fit h-fit block md:hidden my-4"
+                    />
+                    </div>
 
-                    <p className="font-anektelugu-regular text-[1.2rem] md:text-[1.2rem] lg:text-[1.2rem] text-black/70">
-                        {t("hero.description")} <br className="lg:block hidden" /> {t("hero.description2")}
+                    {/* Description */}
+                    <p className="font-anektelugu-regular text-base sm:text-lg md:text-xl text-black/70">
+                        {t("hero.description")}
+                        <br className="lg:block hidden" />
+                        {t("hero.description2")}
                     </p>
 
-                    <div className="flex flex-col md:flex-row items-start gap-6 lg:mt-6 mt-3 max-w-[720px]">
-                        <BaseButton className="border border-white bg-primary-75 text-white px-10 py-6 rounded-md w-[w-2/5] font-kantumruy-medium hover:bg-primary-50 transition-all duration-300 whitespace-nowrap">
+                    {/* Boutons */}
+                    <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 lg:mt-6 mt-4 max-w-[720px]">
+                        <BaseButton className="border border-white bg-primary-75 text-white px-8 py-4 rounded-md font-kantumruy-medium hover:bg-primary-50 transition-all duration-300 whitespace-nowrap w-full md:w-auto">
                             {t("hero.signup")}
                         </BaseButton>
 
-                        <BaseButton className="border border-white bg-white text-dark px-10 py-6 rounded-md w-[w-2/5] border-black font-kantumruy-medium hover:bg-primary-75 hover:text-white transition-all duration-300 whitespace-nowrap">
+                        <BaseButton className="border bg-white text-dark px-8 py-4 rounded-md border-black font-kantumruy-medium hover:bg-primary-75 hover:text-white transition-all duration-300 whitespace-nowrap w-full md:w-auto">
                             {t("hero.service")}
                         </BaseButton>
-
                     </div>
+
+
                 </div>
+
 
                 {/* Image à droite */}
                 <div className="relative w-1/2 h-full lg:pt-6 pt-8 md:flex hidden mt-10">
@@ -61,7 +78,7 @@ const HeroSection = () => {
                 </div>
 
             </div>
-        </section>
+        </section >
     );
 };
 

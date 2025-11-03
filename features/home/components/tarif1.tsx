@@ -5,7 +5,7 @@ import { FaRocket, FaUsers, FaLightbulb, FaGlobe } from "react-icons/fa";
 const Tarif1 = () => {
     const { t } = useTranslation();
     return (
-        <section className=" mt-30 md:px-0 px-4">
+        <section className=" md:px-0 px-4">
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 mx-auto lg:max-w-7xl">
 

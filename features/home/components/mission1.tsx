@@ -6,9 +6,11 @@ const Mission1 = () => {
     const { t } = useTranslation();
     return (
         <section className="md:px-0 px-4 mt-10">
-            <div> <h2 className="text-[3.5rem] text-center h-[10%] font-anektelugu-semibold text-primary-200 mb-6">
-                Services Complémentaires
-            </h2>
+            <div>
+                <h2 className="text-[1.8rem] sm:text-[2.2rem] md:text-[2.8rem] lg:text-[3.5rem] xl:text-[4rem] text-center font-anektelugu-semibold text-primary-200 mb-6">
+                    Services Complémentaires
+                </h2>
+
                 <h3 className="text-[1.3rem] text-center h-[10%] font-anektelugu-semibold text-primary-200 mb-6">
                     Personnalisez votre expérience avec nos options supplémentaires</h3>
             </div>
