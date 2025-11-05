@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Sun, Moon, User, Bell, Menu, X } from "lucide-react";
 import NavLinks from "./nav-links"; // ton composant de liens du dashboard
+import LanguageSwitcher from "@/components/selects/ LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 export default function TopNav({ onToggleSidebar }: { onToggleSidebar?: () => void }) {
     const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -10,6 +12,7 @@ export default function TopNav({ onToggleSidebar }: { onToggleSidebar?: () => vo
     const [search, setSearch] = useState("");
     const [showNotifications, setShowNotifications] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const { t } = useTranslation();
 
     const toggleTheme = () => {
         const newTheme = theme === "light" ? "dark" : "light";
@@ -82,15 +85,7 @@ export default function TopNav({ onToggleSidebar }: { onToggleSidebar?: () => vo
                 </div>
 
                 {/* Langue */}
-                <select
-                    value={lang}
-                    onChange={(e) => setLang(e.target.value)}
-                    className="border rounded px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white"
-                >
-                    <option value="EN">EN</option>
-                    <option value="FR">FR</option>
-                </select>
-
+                <LanguageSwitcher />
                 {/* Theme */}
                 <button
                     onClick={toggleTheme}

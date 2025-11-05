@@ -65,7 +65,7 @@ const Tarif = () => {
             <li>✔ Aspirateur complet</li>
             <li>✔ Séchage à la main</li>
           </ul>
-          <button className="mt-auto bg-primary-250 text-white rounded-lg py-2 px-4 hover:bg-primary-150 transition">
+          <button className="mt-auto bg-primary-250 text-white rounded-lg py-2 px-4 hover:bg-primary-200 transition">
             Choisir
           </button>
         </div>

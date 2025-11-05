@@ -5,6 +5,7 @@ import LanguageSwitcher from "@/components/selects/ LanguageSwitcher";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { siteConfig } from "@/configs/site";
+import { Moon, Sun } from "lucide-react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -22,6 +23,14 @@ const NavbarComponent = () => {
     }
     return pathname?.startsWith(href);
   };
+
+   const [theme, setTheme] = useState<"light" | "dark">("light");
+
+      const toggleTheme = () => {
+        const newTheme = theme === "light" ? "dark" : "light";
+        setTheme(newTheme);
+        document.documentElement.classList.toggle("dark", newTheme === "dark");
+    };
 
   return (
     <header className="fixed top-0 z-50 w-full bg-white/30 backdrop-blur-lg px-4 text-primary-75 ">
@@ -80,6 +89,14 @@ const NavbarComponent = () => {
             </BaseButton>
           </div> */}
           {/* ) : ( */}
+
+           <button
+                    onClick={toggleTheme}
+                    className="p-2 rounded bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white"
+                >
+                    {theme === "light" ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
+                </button>
+                
           <div className="hidden items-center space-x-2 md:flex">
             <Link href="/login">
               <Button className="bg-primary-75 border border-black text-white hover:bg-primary-50 hover:text-white">
