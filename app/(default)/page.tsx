@@ -14,7 +14,6 @@ export default function Home() {
         <Mission /> 
         <Tarif /> 
         <Transforme /> 
-      
 
       </>
     );

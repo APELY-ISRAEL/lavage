@@ -16,19 +16,21 @@ type NavLink = {
 const links: NavLink[] = [
   { name: 'Dashboard', href: '/dashboard/home', icon: HomeIcon },
   {
-    name: 'Gestion des motos',
+    name: 'Gestion des abonements',
     icon: Cog6ToothIcon,
     children: [
-      { name: 'Ajouter un ticket', href: '/dashboard/moto/ajout', icon: HomeIcon },
-      { name: 'Liste des tickets', href: '/dashboard/moto/liste', icon: HomeIcon },
+      { name: 'Ajouter un type', href: '/dashboard/abonement/abonement', icon: HomeIcon },
+      { name: 'Ajouter un abonement', href: '/dashboard/abonement/ajout', icon: HomeIcon },
+      { name: 'Liste des abonnements', href: '/dashboard/abonement/liste', icon: HomeIcon },
     ],
   },
   {
-    name: 'Gestion des voitures',
+    name: 'Gestion des tickets',
     icon: Cog6ToothIcon,
     children: [
-      { name: 'Ajouter un ticket', href: '/dashboard/voitures/add-ticket', icon: HomeIcon },
-      { name: 'Liste des tickets', href: '/dashboard/voitures/tickets', icon: HomeIcon },
+      { name: 'Engin', href: '/dashboard/ticket/engin', icon: HomeIcon },
+      { name: 'Ajouter un ticket', href: '/dashboard/ticket/ajout', icon: HomeIcon },
+      { name: 'Liste des tickets', href: '/dashboard/ticket/liste', icon: HomeIcon },
     ],
   },
 ];
