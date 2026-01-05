@@ -12,7 +12,9 @@
       "link5": "Reservation",
       "language": "Langue",
       "loginBtn": "Se connecter",
-      "dashboardBtn": "Tableau de bord"
+      "dashboardBtn": "Tableau de bord",
+      "profile": "Mon Profil",
+      "logout": "Se déconnecter"
     }
   },
   "hero": {

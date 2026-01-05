@@ -1,5 +1,4 @@
 import { anektelugu } from '@/lib/fonts';
-import '../globals.css';
 import SideNav from './ui/dashboard/sidenav';
 import Footer from './ui/dashboard/footer';
 import TopNav from './ui/dashboard/topnav';

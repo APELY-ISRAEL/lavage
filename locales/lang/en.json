@@ -12,7 +12,9 @@
         "link5": "Reservation",
         "language": "Language",
         "loginBtn": "Login",
-        "dashboardBtn": "Dashboard"
+        "dashboardBtn": "Dashboard",
+        "profile": "Profile",
+        "logout": "Logout"
       }
     },
     "hero": {

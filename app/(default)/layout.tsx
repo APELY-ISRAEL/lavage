@@ -1,6 +1,5 @@
 
 import I18nProvider from "@/locales/I18nProvider";
-import '../globals.css';
 import { Metadata } from "next";
 import {
   generateMetadata as generateMetadataUtil,

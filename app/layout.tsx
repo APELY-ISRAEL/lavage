@@ -1,6 +1,7 @@
-
 import { anektelugu } from '@/lib/fonts';
+import './globals.css';
 import Script from 'next/script';
+import { AuthProvider } from '@/context/AuthContext';
 
 export default function RootLayout({
   children,
@@ -8,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-      <html lang="fr" className={anektelugu.variable}>
+    <html lang="fr" className={anektelugu.variable}>
       <head>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link
@@ -69,12 +70,12 @@ export default function RootLayout({
             }),
           }}
         />
-        
-
-       
-        
       </head>
-      <body>{children}</body>
+      <body>
+        <AuthProvider>
+          {children}
+        </AuthProvider>
+      </body>
     </html>
   );
 }

@@ -1,12 +1,25 @@
 'use client';
 
 import { useState } from "react";
-import { Sun, Moon, User, Bell, Menu, X } from "lucide-react";
+import { Sun, Moon, User, Bell, Menu, X, LogOut, Settings } from "lucide-react";
 import NavLinks from "./nav-links"; // ton composant de liens du dashboard
 import LanguageSwitcher from "@/components/selects/ LanguageSwitcher";
 import { useTranslation } from "react-i18next";
+import { useAuth } from "@/context/AuthContext";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export default function TopNav({ onToggleSidebar }: { onToggleSidebar?: () => void }) {
+    const { user, logout } = useAuth();
+    const router = useRouter();
     const [theme, setTheme] = useState<"light" | "dark">("light");
     const [lang, setLang] = useState("EN");
     const [search, setSearch] = useState("");
@@ -95,9 +108,45 @@ export default function TopNav({ onToggleSidebar }: { onToggleSidebar?: () => vo
                 </button>
 
                 {/* Profil / compte */}
-                <button className="p-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white">
-                    <User className="w-5 h-5" />
-                </button>
+                <DropdownMenu>
+                    <DropdownMenuTrigger asChild>
+                        <button className="p-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white outline-none">
+                            <User className="w-5 h-5" />
+                        </button>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent align="end" className="w-56">
+                        <DropdownMenuLabel>
+                            <div className="flex flex-col space-y-1">
+                                <p className="text-sm font-medium leading-none">{user?.prenom} {user?.nom}</p>
+                                <p className="text-xs leading-none text-muted-foreground">{user?.email}</p>
+                            </div>
+                        </DropdownMenuLabel>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuItem asChild>
+                            <Link href="/dashboard/profile" className="cursor-pointer w-full flex items-center">
+                                <User className="mr-2 h-4 w-4" />
+                                <span>Mon Profil</span>
+                            </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                            <Link href="/dashboard/settings" className="cursor-pointer w-full flex items-center">
+                                <Settings className="mr-2 h-4 w-4" />
+                                <span>Paramètres</span>
+                            </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuItem
+                            className="text-red-600 cursor-pointer"
+                            onClick={() => {
+                                logout();
+                                router.push('/admin/login');
+                            }}
+                        >
+                            <LogOut className="mr-2 h-4 w-4" />
+                            <span>Déconnexion</span>
+                        </DropdownMenuItem>
+                    </DropdownMenuContent>
+                </DropdownMenu>
             </div>
 
             {/* Mobile drawer menu */}
